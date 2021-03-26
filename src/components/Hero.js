@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components/macro";
 
 const HeroSection = styled.section`
-  height: 100hv;
+  height: 100vh;
   max-height: 1100px;
   position: relative;
   overflow: hidden;
@@ -16,14 +16,13 @@ const HeroWrapper = styled.div`
   align-items: center;
   overflow: hidden;
   position: relative;
-  padding-top: 400px;
 `;
 
 const Hero = () => {
   return (
     <HeroSection>
       <HeroWrapper>
-        <h1>Heroooooooo!!</h1>
+        <h1>tesy</h1>
       </HeroWrapper>
     </HeroSection>
   );
