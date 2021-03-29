@@ -1,9 +1,14 @@
+import HouseOne from "../images/HouseOne.jpg";
+import HouseTwo from "../images/HouseTwo.jpg";
+import HouseThree from "../images/HouseThree.jpg";
+import HouseFour from "../images/HouseFour.jpg";
+
 export const SliderData = [{
         title: "Luxury Villa",
         price: "5,800,000",
         path: "/homes",
         label: "View Home",
-        image: "Image-01",
+        image: HouseOne,
         alt: "House",
     },
     {
@@ -11,7 +16,7 @@ export const SliderData = [{
         price: "9,150,000",
         path: "/homes",
         label: "View Home",
-        image: "Image-02",
+        image: HouseTwo,
         alt: "House",
     },
     {
@@ -19,7 +24,7 @@ export const SliderData = [{
         price: "1,850,000",
         path: "/homes",
         label: "View Home",
-        image: "Image-03",
+        image: HouseThree,
         alt: "House",
     },
     {
@@ -27,7 +32,7 @@ export const SliderData = [{
         price: "4,550,000",
         path: "/homes",
         label: "View Home",
-        image: "Image-04",
+        image: HouseFour,
         alt: "House",
     },
     {
