@@ -13,7 +13,6 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
-  background: #000;
 `;
 
 const NavLink = css`
@@ -75,20 +74,21 @@ const NavBtn = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-      <Logo to="/">Homies</Logo>
-      <MenuBars />
+      <Logo to="/"> Homies </Logo> <MenuBars />
       <NavMenu>
+        {" "}
         {menuData.map((item, index) => (
           <NavMenuLinks to={item.link} key={index}>
-            {item.title}
+            {" "}
+            {item.title}{" "}
           </NavMenuLinks>
-        ))}
-      </NavMenu>
+        ))}{" "}
+      </NavMenu>{" "}
       <NavBtn>
         <Button to="/contact" primary="true">
-          Contact Us
-        </Button>
-      </NavBtn>
+          Contact Us{" "}
+        </Button>{" "}
+      </NavBtn>{" "}
     </Nav>
   );
 };
