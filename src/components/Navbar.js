@@ -23,6 +23,13 @@ const NavLink = css`
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+
+  &:hover {
+    transform: scale(1);
+    background: #cd853f;
+    border: 1px solid #cd853f;
+    border-radius: 50px 20px;
+  }
 `;
 
 const Logo = styled(Link)`
