@@ -28,6 +28,10 @@ const NavLink = css`
 const Logo = styled(Link)`
   ${NavLink}
   font-style: italic;
+  text-transform: uppercase;
+  border: 1px solid #cd853f;
+  border-radius: 50px 20px;
+  background: #cd853f;
 `;
 
 const MenuBars = styled.i`
