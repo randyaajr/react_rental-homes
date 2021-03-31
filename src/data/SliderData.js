@@ -4,7 +4,7 @@ import HouseThree from "../images/HouseThree.jpg";
 import HouseFour from "../images/HouseFour.jpg";
 
 export const SliderData = [{
-        title: "Luxury Villa",
+        title: "Luxury Home In Orlando, USA",
         price: "5,800,000",
         path: "/homes",
         label: "View Home",
