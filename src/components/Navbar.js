@@ -82,24 +82,23 @@ const NavBtn = styled.div`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <Logo to="/"> Homies </Logo> <MenuBars />
+      <MenuBars onClick={toggle} />
       <NavMenu>
-        {" "}
         {menuData.map((item, index) => (
           <NavMenuLinks to={item.link} key={index}>
-            {" "}
-            {item.title}{" "}
+            {item.title}
           </NavMenuLinks>
-        ))}{" "}
-      </NavMenu>{" "}
+        ))}
+      </NavMenu>
       <NavBtn>
         <Button to="/contact" primary="true">
-          Contact Us{" "}
-        </Button>{" "}
-      </NavBtn>{" "}
+          Contact Us
+        </Button>
+      </NavBtn>
     </Nav>
   );
 };
