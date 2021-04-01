@@ -7,18 +7,25 @@ const Container = styled.div``;
 const ColumnLeft = styled.div``;
 const ColumnRight = styled.div``;
 
-const InfoSection = () => {
+const InfoSection = ({
+  heading,
+  paragraphOne,
+  paragraphTwo,
+  buttonLabel,
+  reverse,
+  image,
+}) => {
   return (
     <Section>
       <Container>
         <ColumnLeft>
-          <h1>Heading</h1>
-          <p>paragraph</p>
-          <p>paragraph</p>
-          <Button to="/homes">Homes</Button>
+          <h1>{heading}</h1>
+          <p>{paragraphOne}</p>
+          <p>{paragraphTwo}</p>
+          <Button to="/homes">{buttonLabel}</Button>
         </ColumnLeft>
-        <ColumnRight>
-          <img src="#" alt="Luxury Villa" />
+        <ColumnRight reverse={reverse}>
+          <img src={image} alt="Luxury Villa" />
         </ColumnRight>
       </Container>
     </Section>
